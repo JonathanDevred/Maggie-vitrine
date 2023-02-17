@@ -5,11 +5,12 @@ const HomePage = () => {
 
     return (
         <section className="container">
-        <Header />
+            <Header />
 
-        <h1>Page de présentation</h1>
+            <h1>Page de présentation</h1>
         </section>
-        )
+
+    )
 
 }
 
