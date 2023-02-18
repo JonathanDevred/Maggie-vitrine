@@ -1,0 +1,18 @@
+@import "../../vars.scss";
+
+.form-container{
+    max-width: 50%;
+    margin: 0 auto 0 auto;
+    border: 2px $background solid;
+    border-radius: 10px;
+    background-color: $background;
+    padding: $gutter
+}
+
+.form-subtitle{
+    font-size: $gutter;
+    font-weight: bold;
+    margin: $gutter 0 $gutter 0;
+    text-align: center;
+    color: $white-text;
+}

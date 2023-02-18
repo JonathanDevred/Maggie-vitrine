@@ -11,24 +11,30 @@ return (
         <div>
             <ul className="nav-container">
                 
-                <Link to="/about">
-                <li >
-                    
-                    À PROPOS
+                <Link to="/">
+                <li className="nav-link">
+                    ACCUEIL
                 </li>
                 </Link>
-                <li>
-                    
+
+                <Link to="/blog">
+                <li className="nav-link">
                     MON BLOG                        
                 </li>
-                <li>
-                    
+                </Link>
+
+                <Link to="/podcast">
+                <li className="nav-link">         
                     MON PODCAST
                 </li>
-                <li>
-                    
+                </Link>
+
+                <Link to="/bibliothèque">
+                <li className="nav-link">
                     MA BIBLIOTHÈQUE
                 </li>
+                </Link>
+
             </ul>
         </div>
         </section>

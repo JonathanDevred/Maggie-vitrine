@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import { Button, Input, Form, TextArea } from "semantic-ui-react";
+import 'semantic-ui-css/semantic.min.css';
+import "./style.scss"
+
 
 function ContactForm() {
 
@@ -18,26 +22,31 @@ function ContactForm() {
     event.preventDefault();
     console.log(formData);
 
+
   }
 
 
 
   return (
-  <div className="page">
-    <form onSubmit={handleSubmit}>
+  <div className="form-container">
+    <h2 className='form-subtitle'>Me contacter</h2>
+    <Form>
+      <Form.Field>
       <span>Email:</span> <br />
       <label className='contact-email'>
-        <input type="email" name="email" placeholder='email@example.com' onChange={handleChange} value={formData.email} />
+        <Input focus type="email" name="email" placeholder='email@example.com' onChange={handleChange} value={formData.email} />
       </label>
+      </Form.Field>
       <br />
+      <Form.Field>
       <span>Message :</span> <br />
       <label className='contact-message'>
-        
-        <textarea name="message" placeholder='Votre message..' rows="5" cols="50" onChange={handleChange} value={formData.message} />
+        <TextArea name="message" placeholder='Votre message..' rows="5" cols="50" onChange={handleChange} value={formData.message} />
       </label>
+      </Form.Field>
       <br />
-      <button type="submit" className='submit-contact-form'>Envoyer</button>
-    </form>
+      <Button onClick={handleSubmit} className='submit-contact-form'>Envoyer</Button>
+    </Form>
   </div>
   );
 }

@@ -1,14 +1,14 @@
 @import '../../vars.scss';
 
 .header {
-    background-color: #6c6c6c;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    background-color: #CEC6DD;
+    padding-bottom: $gutter;
+    padding-top: $gutter;
 }
 
 .header-title {
     font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
+    font-size: $gutter;
     color: $white-text;
     text-align: center;
     padding-bottom: 3rem;
@@ -23,3 +23,7 @@
     font-weight: bold;
 }
 
+.nav-link{
+    color: $white-text;
+    text-decoration: underline white;
+}
